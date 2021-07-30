@@ -6,6 +6,7 @@ specifiers:
   colors: ^1.4.0
   execa: ^5.1.1
   jest: ^27.0.6
+  jest-diff: ^27.0.6
   prettier: ^2.3.2
   ts-node: ^10.1.0
 
@@ -15,6 +16,7 @@ devDependencies:
   colors: 1.4.0
   execa: 5.1.1
   jest: 27.0.6_ts-node@10.1.0
+  jest-diff: registry.nlark.com/jest-diff/27.0.6
   prettier: registry.nlark.com/prettier/2.3.2
   ts-node: 10.1.0_@types+node@16.4.1
 
@@ -719,7 +721,7 @@ packages:
     dev: true
 
   /ansi-regex/5.0.0:
-    resolution: {integrity: sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==}
+    resolution: {integrity: sha1-OIU59VF5vzkznIGvMKZU1p+Hy3U=, tarball: ansi-regex/download/ansi-regex-5.0.0.tgz?cache=0&sync_timestamp=1618553918353&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fansi-regex%2Fdownload%2Fansi-regex-5.0.0.tgz}
     engines: {node: '>=8'}
     dev: true
 
@@ -954,7 +956,7 @@ packages:
     dev: true
 
   /color-convert/2.0.1:
-    resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
+    resolution: {integrity: sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=, tarball: color-convert/download/color-convert-2.0.1.tgz}
     engines: {node: '>=7.0.0'}
     dependencies:
       color-name: 1.1.4
@@ -965,7 +967,7 @@ packages:
     dev: true
 
   /color-name/1.1.4:
-    resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    resolution: {integrity: sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=, tarball: color-name/download/color-name-1.1.4.tgz}
     dev: true
 
   /colorette/1.2.2:
@@ -2678,11 +2680,125 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  registry.nlark.com/@jest/types/27.0.6:
+    resolution: {integrity: sha1-mpkrxRfgxJ8DWTi4VJcZwt5AcGs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@jest/types/download/@jest/types-27.0.6.tgz}
+    name: '@jest/types'
+    version: 27.0.6
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      '@types/istanbul-lib-coverage': registry.nlark.com/@types/istanbul-lib-coverage/2.0.3
+      '@types/istanbul-reports': registry.nlark.com/@types/istanbul-reports/3.0.1
+      '@types/node': registry.nlark.com/@types/node/16.4.2
+      '@types/yargs': registry.nlark.com/@types/yargs/16.0.4
+      chalk: registry.nlark.com/chalk/4.1.1
+    dev: true
+
+  registry.nlark.com/@types/istanbul-lib-coverage/2.0.3:
+    resolution: {integrity: sha1-S6jdtyAiH0MuRDvV+RF/0iz9R2I=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/istanbul-lib-coverage/download/@types/istanbul-lib-coverage-2.0.3.tgz}
+    name: '@types/istanbul-lib-coverage'
+    version: 2.0.3
+    dev: true
+
+  registry.nlark.com/@types/istanbul-lib-report/3.0.0:
+    resolution: {integrity: sha1-wUwk8Y6oGQwRjudWK3/5mjZVJoY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/istanbul-lib-report/download/@types/istanbul-lib-report-3.0.0.tgz}
+    name: '@types/istanbul-lib-report'
+    version: 3.0.0
+    dependencies:
+      '@types/istanbul-lib-coverage': registry.nlark.com/@types/istanbul-lib-coverage/2.0.3
+    dev: true
+
+  registry.nlark.com/@types/istanbul-reports/3.0.1:
+    resolution: {integrity: sha1-kVP+mLuivVZaY63ZQ21vDX+EaP8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/istanbul-reports/download/@types/istanbul-reports-3.0.1.tgz}
+    name: '@types/istanbul-reports'
+    version: 3.0.1
+    dependencies:
+      '@types/istanbul-lib-report': registry.nlark.com/@types/istanbul-lib-report/3.0.0
+    dev: true
+
+  registry.nlark.com/@types/node/16.4.2:
+    resolution: {integrity: sha1-CpXX/ZUMserKDOEQMdcuj2gLd1o=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/node/download/@types/node-16.4.2.tgz?cache=0&sync_timestamp=1627148368324&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-16.4.2.tgz}
+    name: '@types/node'
+    version: 16.4.2
+    dev: true
+
+  registry.nlark.com/@types/yargs-parser/20.2.1:
+    resolution: {integrity: sha1-O5ziSJkZ2eT+pDm3aRarw0st8Sk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/yargs-parser/download/@types/yargs-parser-20.2.1.tgz}
+    name: '@types/yargs-parser'
+    version: 20.2.1
+    dev: true
+
+  registry.nlark.com/@types/yargs/16.0.4:
+    resolution: {integrity: sha1-JqrZjdLCo45CEIbqmtQrnlFkKXc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/yargs/download/@types/yargs-16.0.4.tgz}
+    name: '@types/yargs'
+    version: 16.0.4
+    dependencies:
+      '@types/yargs-parser': registry.nlark.com/@types/yargs-parser/20.2.1
+    dev: true
+
+  registry.nlark.com/ansi-styles/4.3.0:
+    resolution: {integrity: sha1-7dgDYornHATIWuegkG7a00tkiTc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-styles/download/ansi-styles-4.3.0.tgz?cache=0&sync_timestamp=1618997040758&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fansi-styles%2Fdownload%2Fansi-styles-4.3.0.tgz}
+    name: ansi-styles
+    version: 4.3.0
+    engines: {node: '>=8'}
+    dependencies:
+      color-convert: 2.0.1
+    dev: true
+
+  registry.nlark.com/ansi-styles/5.2.0:
+    resolution: {integrity: sha1-B0SWkK1Fd30ZJKwquy/IiV26g2s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-styles/download/ansi-styles-5.2.0.tgz?cache=0&sync_timestamp=1618997040758&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fansi-styles%2Fdownload%2Fansi-styles-5.2.0.tgz}
+    name: ansi-styles
+    version: 5.2.0
+    engines: {node: '>=10'}
+    dev: true
+
   registry.nlark.com/cac/6.7.3:
     resolution: {integrity: sha1-EEELhhFneZDMLjyLV21HHB1xt2g=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/cac/download/cac-6.7.3.tgz}
     name: cac
     version: 6.7.3
     engines: {node: '>=8'}
+    dev: true
+
+  registry.nlark.com/chalk/4.1.1:
+    resolution: {integrity: sha1-yAs/qyi/Y3HmhjMl7uZ+YYt35q0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/chalk/download/chalk-4.1.1.tgz?cache=0&sync_timestamp=1618997040045&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fchalk%2Fdownload%2Fchalk-4.1.1.tgz}
+    name: chalk
+    version: 4.1.1
+    engines: {node: '>=10'}
+    dependencies:
+      ansi-styles: registry.nlark.com/ansi-styles/4.3.0
+      supports-color: registry.nlark.com/supports-color/7.2.0
+    dev: true
+
+  registry.nlark.com/diff-sequences/27.0.6:
+    resolution: {integrity: sha1-MwXLLlWgM5JAVGlcxmAZ/X+OVyM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/diff-sequences/download/diff-sequences-27.0.6.tgz}
+    name: diff-sequences
+    version: 27.0.6
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dev: true
+
+  registry.nlark.com/has-flag/4.0.0:
+    resolution: {integrity: sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/has-flag/download/has-flag-4.0.0.tgz?cache=0&sync_timestamp=1626716875947&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fhas-flag%2Fdownload%2Fhas-flag-4.0.0.tgz}
+    name: has-flag
+    version: 4.0.0
+    engines: {node: '>=8'}
+    dev: true
+
+  registry.nlark.com/jest-diff/27.0.6:
+    resolution: {integrity: sha1-SnoZ7m8ErXDg4ziPNYKTlKRMe14=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/jest-diff/download/jest-diff-27.0.6.tgz}
+    name: jest-diff
+    version: 27.0.6
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      chalk: registry.nlark.com/chalk/4.1.1
+      diff-sequences: registry.nlark.com/diff-sequences/27.0.6
+      jest-get-type: registry.nlark.com/jest-get-type/27.0.6
+      pretty-format: registry.nlark.com/pretty-format/27.0.6
+    dev: true
+
+  registry.nlark.com/jest-get-type/27.0.6:
+    resolution: {integrity: sha1-DrXH91WFQnnOm2ip8aQSL2kEfP4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/jest-get-type/download/jest-get-type-27.0.6.tgz}
+    name: jest-get-type
+    version: 27.0.6
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dev: true
 
   registry.nlark.com/prettier/2.3.2:
@@ -2691,4 +2807,31 @@ packages:
     version: 2.3.2
     engines: {node: '>=10.13.0'}
     hasBin: true
+    dev: true
+
+  registry.nlark.com/pretty-format/27.0.6:
+    resolution: {integrity: sha1-q3cMR7LG+JOiGu/Fe3XaY+9JoR8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/pretty-format/download/pretty-format-27.0.6.tgz}
+    name: pretty-format
+    version: 27.0.6
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      '@jest/types': registry.nlark.com/@jest/types/27.0.6
+      ansi-regex: 5.0.0
+      ansi-styles: registry.nlark.com/ansi-styles/5.2.0
+      react-is: registry.nlark.com/react-is/17.0.2
+    dev: true
+
+  registry.nlark.com/react-is/17.0.2:
+    resolution: {integrity: sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/react-is/download/react-is-17.0.2.tgz}
+    name: react-is
+    version: 17.0.2
+    dev: true
+
+  registry.nlark.com/supports-color/7.2.0:
+    resolution: {integrity: sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/supports-color/download/supports-color-7.2.0.tgz?cache=0&sync_timestamp=1626703414084&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsupports-color%2Fdownload%2Fsupports-color-7.2.0.tgz}
+    name: supports-color
+    version: 7.2.0
+    engines: {node: '>=8'}
+    dependencies:
+      has-flag: registry.nlark.com/has-flag/4.0.0
     dev: true

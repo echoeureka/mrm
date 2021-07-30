@@ -3,8 +3,35 @@
   "version": "1.0.0",
   "description": "not only nrm",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
+  "keywords": [
+    "nrm",
+    "nnrm",
+    "nonrm"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "nrm": "ts-node index.ts",
+    "nonrm": "",
+    "yrm": "",
+    "noyrm": "",
+    "prm": "",
+    "noprm": "",
+    "grm": "",
+    "nogrm": "",
+    "norc": ""
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.1",
+    "cac": "^6.7.3",
+    "colors": "^1.4.0",
+    "execa": "^5.1.1",
+    "jest": "^27.0.6",
+    "jest-diff": "^27.0.6",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.1.0"
+  }
 }
